@@ -1,0 +1,489 @@
+/*
+    --------------------Side-Menu--------------------
+*/
+
+:root {
+    --width: 300px;
+    --padding: 10px;
+    --bgcolor: rgb(52, 52, 52);
+    --hovercolor: rgb(23, 23, 23);
+    --width-collapsed: 50px;
+}
+
+body {
+    background-color: dimgrey;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+    margin-left: var(--width-collapsed);
+}
+
+.body-expanded {
+    margin-left: var(--width);
+}
+
+#main-container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+#side-menu {
+    background-color: var(--bgcolor);
+    color: white;
+    position: fixed;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+#side-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+/*---------HEADER---------*/
+
+#side-menu #header {
+    box-sizing: border-box;
+    border-bottom: solid 1px var(--hovercolor);
+}
+
+#side-menu #header #title {
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
+}
+
+#side-menu #header #title, #side-menu #header #menu-btn {
+    vertical-align: middle;
+}
+
+#side-menu #header #menu-btn {
+    display: inline-block;
+}
+
+#side-menu #header #menu-btn {
+    cursor: pointer;
+    padding: 10px;
+    width: var(--width-collapsed);
+    box-sizing: border-box;
+}
+
+#side-menu #header #menu-btn:hover {
+    background-color: var(--hovercolor);
+}
+
+#side-menu #header #menu-btn .btn-navicon {
+    width: 100%;
+    height: auto;
+    margin: 5px 0;
+}
+
+#side-menu #header #menu-btn .btn-navicon img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*---------PROFILE--------*/
+
+#side-menu #profile {
+    border-bottom: 1px solid var(--hovercolor);
+    padding: var(--padding) 0;
+    text-align: center;
+}
+
+#side-menu #profile #photo {
+    box-sizing: border-box;
+    padding: var(--padding);
+    margin: 0 auto;
+}
+
+#side-menu #profile #photo img {
+    border-radius: 50%;
+    max-width: 60%;
+    height: auto;
+}
+
+#side-menu #profile #photo, #side-menu #profile #name {
+    font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: var(--padding) 0;
+    overflow: hidden;
+}
+
+/*---------Items--------*/
+
+#side-menu #menu-items {
+    overflow: hidden;
+}
+
+#side-menu #menu-items .item {
+    width: var(--width);
+}
+
+#side-menu #menu-items .item .icon {
+    display: inline-block;
+}
+
+#side-menu #menu-items .item .icon,  #side-menu #menu-items .item .title {
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    vertical-align: middle;
+    overflow: hidden;
+    display: inline-block;
+}
+
+#side-menu #menu-items .item a {
+    display: block;
+}
+
+#side-menu #menu-items .item a:hover {
+    background-color: var(--hovercolor);
+}
+
+#side-menu #menu-items .item .icon {
+    box-sizing: border-box;
+    padding: var(--padding);
+    width: var(--width-collapsed);
+}
+
+#side-menu #menu-items .item .icon img {
+    max-width: 100%;
+    height: auto;
+}
+
+#side-menu #menu-items .item .title {
+    padding: var(--padding) 0;
+}
+
+#side-menu #menu-items .item.separator {
+    height: 1px;
+    border-bottom: 1px solid var(--hovercolor);
+    margin: 15px 0;
+}
+
+.menu-expanded {
+    width: var(--width);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.menu-expanded #header #title {
+    display: inline-block;
+    width: calc(100% - 50px);
+    margin-right: -5px;
+    padding: var(--padding);
+}
+
+.menu-expanded #header #title span {
+    width: calc(var(--width) - var(--width-collapsed) - 5px);
+    overflow: hidden;
+}
+
+.menu-expanded #profile #photo {
+    width: 200px;
+}
+
+.menu-expanded #profile #name {
+    width: 100%;
+}
+
+.menu-collapsed {
+    width: var(--width-collapsed);
+}
+
+.menu-collapsed #header #title {
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-collapsed #profile #name {
+    display: none;
+}
+
+.menu-collapsed .item {
+    width: 100px;
+}
+
+/*
+    --------------------Main-Page--------------------
+*/
+
+/*---------Welcome-Section--------*/
+
+#welcome-section {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+}
+
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#welcome-section.welcome-section h1 {
+    font-size: 32px;
+}
+
+#welcome-section.welcome-section p {
+    font-style: italic;
+    color: dodgerblue;
+}
+
+/*---------Projects-Section--------*/
+
+#projects {
+    background-color: rgba(30, 124, 255, 0.5);
+}
+
+.projects-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#projects.projects-section .projects-grid a.project.project-tile {
+    background-color: dimgray;
+    border-radius: 15px;
+    padding: 10px;
+    text-decoration: none;
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: auto;
+}
+
+#projects.projects-section .projects-grid a.project.project-tile img.project-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+#projects.projects-section .projects-grid a.project.project-tile p.project-title {
+    font-weight: 600;
+    color: white;
+}
+
+/*---------Contact-Section--------*/
+
+#contact {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#contact.contact-section .contact-section-header h2 {
+    font-size: 32px;
+}
+
+#contact.contact-section .contact-section-header p {
+    color: dodgerblue;
+    font-style: italic;
+}
+
+#contact.contact-section .contact-links {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin-top: 3%;
+}
+
+#contact.contact-section .contact-links a.btn.contact-details {
+    display: block;
+    text-decoration: none;
+    margin: 0% 1% 0% 1%;
+    padding: 10px;
+}
+
+#contact.contact-section .contact-links a.btn.contact-details img.contact-icon {
+    display: inline-block;
+    max-width: 20%;
+    height: auto;
+    vertical-align: middle;
+}
+
+#contact.contact-section .contact-links a.btn.contact-details span {
+    display: inline-block;
+    vertical-align: middle;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*---------Footer-Section--------*/
+
+footer {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: small;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+}
+
+#important-information {
+    color: #FF0000;
+}
+
+#footer-information {
+    color: #ffffff;
+    font-size: small;
+}
+
+/*
+    --------------------Media-Queries--------------------
+*/
+
+@media screen and (min-height: 500px) {
+    #beautiful-background {
+        background-image: url("Images/Background-Page/Beautiful-Background-Web-1280x720.png");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (min-height: 700px) {
+    #beautiful-background {
+        background-image: url("Images/Background-Page/Beautiful-Background-HD-1600x900.png");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (min-height: 800px) {
+    #beautiful-background {
+        background-image: url("Images/Background-Page/Beautiful-Background-Full_HD-1920x1080.png");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (min-height: 1900px) {
+    #beautiful-background {
+        background-image: url("Images/Background-Page/Beautiful-Background-Ultra_High_Definition-3840x2160.png");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/*---------Projects-Section--------*/
+
+@media screen and (min-width: 375px) {
+    #projects.projects-section .projects-grid a.project.project-tile {
+        background-color: dimgray;
+        border-radius: 15px;
+        padding: 10px;
+        text-decoration: none;
+        margin: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+        height: auto;
+    }    
+}
+
+@media screen and (min-width: 1280px) {
+    #projects.projects-section .projects-grid a.project.project-tile {
+        background-color: dimgray;
+        border-radius: 15px;
+        padding: 10px;
+        text-decoration: none;
+        margin: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 400px;
+        height: auto;
+    }    
+}
+
+@media screen and (min-width: 375px) {
+    .projects-grid {
+        display: grid;
+        grid-template-rows: 275px 275px 275px 275px;
+        grid-template-columns: 350px;
+        align-content: center;
+        justify-items: center;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .projects-grid {
+        display: grid;
+        grid-template-rows: 325px 325px;
+        grid-template-columns: 475px 475px;
+        align-content: center;
+        justify-items: center;
+    }
+}
+
+/*---------Contact-Section--------*/
+
+@media screen and (min-width: 375px) {
+    #contact.contact-section .contact-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        margin-top: 3%;
+    }
+    
+    #contact.contact-section .contact-links a.btn.contact-details {
+        display: block;
+        text-decoration: none;
+        margin: 1% 0% 1% 0%;
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    #contact.contact-section .contact-links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        margin-top: 3%;
+    }
+    
+    #contact.contact-section .contact-links a.btn.contact-details {
+        display: block;
+        text-decoration: none;
+        margin: 0% 1% 0% 1%;
+        padding: 10px;
+    }
+}
