@@ -493,7 +493,59 @@ footer {
     }
 }
 
-/*---------Contact-Section--------*/
+/*---------Certifications-Section--------*/
+
+@media screen and (min-width: 375px) {
+    #certifications.certifications-section .certifications-grid a.certification.certification-tile {
+        background-color: dimgray;
+        border-radius: 15px;
+        padding: 10px;
+        text-decoration: none;
+        margin: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+        height: auto;
+    }    
+}
+
+@media screen and (min-width: 1280px) {
+    #certifications.certifications-section .certifications-grid a.certification.certification-tile {
+        background-color: dimgray;
+        border-radius: 15px;
+        padding: 10px;
+        text-decoration: none;
+        margin: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 400px;
+        height: auto;
+    }    
+}
+
+@media screen and (min-width: 375px) {
+    .certifications-grid {
+        display: grid;
+        grid-template-rows: 275px 275px 275px 275px;
+        grid-template-columns: 350px;
+        align-content: center;
+        justify-items: center;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .certifications-grid {
+        display: grid;
+        grid-template-rows: 325px 325px;
+        grid-template-columns: 475px 475px;
+        align-content: center;
+        justify-items: center;
+    }
+}
+
+/*---------Contacts-Section--------*/
 
 @media screen and (min-width: 375px) {
     #contact.contact-section .contact-links {
