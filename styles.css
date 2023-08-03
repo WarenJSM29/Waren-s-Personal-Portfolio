@@ -253,7 +253,7 @@ body {
 }
 
 #projects.projects-section .projects-grid a.project.project-tile {
-    background-color: rgba(105, 105, 105, 0.5);
+    background-color: rgba(52, 52, 52, 0.8);
     border-radius: 15px;
     padding: 10px;
     text-decoration: none;
@@ -296,7 +296,7 @@ body {
 }
 
 #certifications.certifications-section .certifications-grid a.certification.certification-tile {
-    background-color: rgba(105, 105, 105, 0.5);
+    background-color: rgba(52, 52, 52, 0.8);
     border-radius: 15px;
     padding: 10px;
     text-decoration: none;
@@ -445,7 +445,7 @@ footer {
 
 @media screen and (min-width: 375px) {
     #projects.projects-section .projects-grid a.project.project-tile {
-        background-color: dimgray;
+        background-color: rgba(52, 52, 52, 0.8);
         border-radius: 15px;
         padding: 10px;
         text-decoration: none;
@@ -460,7 +460,7 @@ footer {
 
 @media screen and (min-width: 1280px) {
     #projects.projects-section .projects-grid a.project.project-tile {
-        background-color: dimgray;
+        background-color: rgba(52, 52, 52, 0.8);
         border-radius: 15px;
         padding: 10px;
         text-decoration: none;
@@ -497,7 +497,7 @@ footer {
 
 @media screen and (min-width: 375px) {
     #certifications.certifications-section .certifications-grid a.certification.certification-tile {
-        background-color: dimgray;
+        background-color: rgba(52, 52, 52, 0.8);
         border-radius: 15px;
         padding: 10px;
         text-decoration: none;
@@ -512,7 +512,7 @@ footer {
 
 @media screen and (min-width: 1280px) {
     #certifications.certifications-section .certifications-grid a.certification.certification-tile {
-        background-color: dimgray;
+        background-color: rgba(52, 52, 52, 0.8);
         border-radius: 15px;
         padding: 10px;
         text-decoration: none;
