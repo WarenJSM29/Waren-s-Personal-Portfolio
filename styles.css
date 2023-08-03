@@ -253,7 +253,7 @@ body {
 }
 
 #projects.projects-section .projects-grid a.project.project-tile {
-    background-color: dimgray;
+    background-color: rgba(105, 105, 105, 0.5);
     border-radius: 15px;
     padding: 10px;
     text-decoration: none;
@@ -296,7 +296,7 @@ body {
 }
 
 #certifications.certifications-section .certifications-grid a.certification.certification-tile {
-    background-color: dimgray;
+    background-color: rgba(105, 105, 105, 0.5);
     border-radius: 15px;
     padding: 10px;
     text-decoration: none;
