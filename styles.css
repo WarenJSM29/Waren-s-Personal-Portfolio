@@ -276,7 +276,50 @@ body {
     color: white;
 }
 
-/*---------Contact-Section--------*/
+/*---------Certifications-Section--------*/
+
+#certifications {
+    background-color: rgba(255, 53, 53, 0.5);
+}
+
+.certifications-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#certifications .certifications-section .certifications-section-header h2 {
+    font-size: 32px;
+}
+
+#certifications.certifications-section .certifications-grid a.certification.certification-tile {
+    background-color: dimgray;
+    border-radius: 15px;
+    padding: 10px;
+    text-decoration: none;
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: auto;
+}
+
+#certifications.certifications-section .certifications-grid a.certification.certification-tile img.certification-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+#certifications.certifications-section .certifications-grid a.certification.certification-tile p.certification-title {
+    font-weight: 600;
+    color: white;
+}
+
+/*---------Contacts-Section--------*/
 
 #contact {
     background-color: rgba(0, 0, 0, 0.5);
