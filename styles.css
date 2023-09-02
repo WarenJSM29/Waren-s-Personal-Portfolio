@@ -476,7 +476,7 @@ footer {
 @media screen and (min-width: 375px) {
     .projects-grid {
         display: grid;
-        grid-template-rows: 275px 275px 275px 275px;
+        grid-template-rows: 275px 275px 275px 275px 275px;
         grid-template-columns: 350px;
         align-content: center;
         justify-items: center;
@@ -486,7 +486,7 @@ footer {
 @media screen and (min-width: 1280px) {
     .projects-grid {
         display: grid;
-        grid-template-rows: 325px 325px;
+        grid-template-rows: 325px 325px 325px;
         grid-template-columns: 475px 475px;
         align-content: center;
         justify-items: center;
